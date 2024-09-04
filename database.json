@@ -1,0 +1,8 @@
+{
+    "name" : "jone due",
+    "age" : 34,
+    "eligible" : "ture",
+    "shoping" : {"item":1,"brand":"gucci"},
+    "array1" : ["bhopal",{"id":1,"city":"indore"}]
+
+}
