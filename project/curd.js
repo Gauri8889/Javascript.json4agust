@@ -14,18 +14,22 @@ async function dataShow() {
  let myobj = await fetch(url);
  console.log(myobj);
 
+ let mydata = await myobj.json();
+ console.log(mydata);
+
  mydata.map ((key) => {
     mytable += `
     <tr>
     <td>${key.id}</td>
-    <td>${key.employee}</td>
+    <td>${key.employeeno}</td>
+    <td>${key.name}</td>
     <td>${key.salary}</td>
     <td>${key.city}</td>
     </tr>
     `;
  });
 
- mytable =+ `</table>`;
+ mytable += `</table>`;
  document.getElementById("demo").innerHTML = mytable;
 }
 dataShow();

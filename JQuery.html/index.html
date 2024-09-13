@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+    $(document).ready(function(){
+        // $("button").click(function(){
+        //         $("p").hide()
+        // })
+
+        // $("button").dblclick(function(){
+        //     $("#test").hide()
+        // })
+
+        $("button").click(function(){
+            $("p.new").hide()
+        })
+        $("#test").click(function(){
+            $(this).hide()
+        })
+        // $("#mypara").mouseenter(function(){
+        //     alert("mouse leave")
+        // })
+
+        // $("#mypara").mouseleave(function(){
+        //     alert("mouse leave")
+        // })
+
+        // $("#mypara").hover(
+        //     function(){
+        //         alert('Hover on')
+        //     },
+        //     function() {
+        //         alert('Hover out')
+        //     })
+
+        //focus or blur
+        $("input").focus(function(){
+            $(this).css("background-color","yellow")
+        })
+
+        $("input").blur(function(){
+            $(this).css("background-color","green")
+        })
+        })
+
+</script>
+<body>
+    <script src="Sript.js"></script>
+    <h1 class="new">Hello Guys</h1>
+    <p id="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, aperiam?</p>
+    <p class="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur recusandae ipsum itaque distinctio consequatur!</p>
+    <p class="new">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, possimus?</p>
+    <p id="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, expedita.</p>
+    <button>Click</button>
+    <input type="text" placeholder="Enter name">
+</body>
+</html>
