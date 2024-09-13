@@ -11,7 +11,7 @@ async function dataShow() {
  `;
 
  let url = "http://localhost:3000/employee";
- let myobj = await fatch(url);
+ let myobj = await fetch(url);
  console.log(myobj);
 
  mydata.map ((key) => {
